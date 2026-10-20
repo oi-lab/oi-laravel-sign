@@ -1,0 +1,7 @@
+{
+    "type": "package",
+    "name": "oi-lab/oi-laravel-sign",
+    "title": "OI Laravel Sign",
+    "description": "Online e-signature for any Laravel model, with one-time codes, a sealed PDF and an evidence trail",
+    "order": 40
+}

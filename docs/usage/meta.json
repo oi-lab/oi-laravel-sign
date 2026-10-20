@@ -1,0 +1,6 @@
+{
+    "type": "section",
+    "title": "Usage",
+    "description": "Make a model signable, request signatures and follow them",
+    "order": 2
+}

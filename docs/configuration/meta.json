@@ -1,0 +1,6 @@
+{
+    "type": "section",
+    "title": "Configuration",
+    "description": "Routes, storage, codes, sealing and notifications",
+    "order": 3
+}
