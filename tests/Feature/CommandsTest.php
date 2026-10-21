@@ -70,11 +70,11 @@ it('exports the evidence as JSON', function () {
 it('creates a self-signed seal certificate', function () {
     $directory = sys_get_temp_dir().'/oi-sign-cert-'.uniqid();
 
-    $this->artisan('sign:make-certificate', ['--path' => $directory, '--name' => 'Mergin'])
+    $this->artisan('sign:make-certificate', ['--path' => $directory, '--name' => 'Acme'])
         ->expectsOutputToContain('OI_SIGN_CERTIFICATE_PATH=')
         ->assertSuccessful();
 
-    expect(openssl_x509_parse(file_get_contents($directory.'/seal-certificate.pem'))['subject']['CN'])->toBe('Mergin e-signature seal');
+    expect(openssl_x509_parse(file_get_contents($directory.'/seal-certificate.pem'))['subject']['CN'])->toBe('Acme e-signature seal');
 
     $this->artisan('sign:make-certificate', ['--path' => $directory])->assertFailed();
 });
